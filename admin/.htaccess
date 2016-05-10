@@ -1,0 +1,13 @@
+#php_flag magic_quotes_gpc Off
+#php_flag magic_quotes_runtime Off
+#php_flag magic_quotes_sybase Off
+
+#Order deny,allow
+#deny from all
+#allow from 94.136.31.33 # LimeSoda office
+
+AuthType Basic
+AuthName Transamerica
+AuthUserFile /home/faces/public_html/admin/.htpasswd
+AuthGroupFile /dev/null
+require valid-user
